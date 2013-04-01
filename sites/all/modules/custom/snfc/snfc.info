@@ -1,0 +1,4 @@
+name = SNFC
+description = "SNFC custom module"
+core = 7.x
+package = SNFC

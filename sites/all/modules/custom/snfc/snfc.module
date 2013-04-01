@@ -1,0 +1,172 @@
+<?php
+
+define('SNFC_PATH', drupal_get_path('module','snfc'));
+
+
+/**
+ * Implementation of hook_ctools_plugin_api() to let the system know
+ * we support the new panels rendering engine
+ */
+function snfc_ctools_plugin_api($module, $api) {
+  if ($module == 'panels' && $api == 'styles') {
+    return array('version' => 2);
+  }
+}
+/**
+ * Implementation of hook_ctools_plugin_dierctory() to let the system know
+ * we implement task and task_handler plugins.
+ */
+function snfc_ctools_plugin_directory($module, $plugin) {
+  return 'plugins/' . $plugin;
+}
+
+
+
+
+/**
+ * =====================================================================
+ * MENU SYSTEM
+ * ===================================================================== 
+ */
+
+/**
+ * Implementation of hook_menu
+ * @return 
+ */
+function snfc_menu() {
+  $items = array();
+  
+  
+  return $items;
+}
+
+
+/**
+ * Implements hook_menu_alter().
+ *
+ */
+function snfc_menu_alter(&$items) {
+  
+}
+
+
+
+/**
+ * =====================================================================
+ * FORM API
+ * ===================================================================== 
+ */
+
+/**
+ * Implementation of hook_form_alter()
+ */
+function snfc_form_alter(&$form, &$form_state, $form_id) {
+  //krumo($form_id);
+  
+  global $user;
+  
+  // Node edit form
+  if (strpos($form_id, '_node_form')) {
+    
+  }
+  
+  
+  switch ($form_id) {
+    case 'search_form':
+      break;
+    
+      
+  }
+  
+}
+
+
+
+/**
+ * =====================================================================
+ * THEME SYSTEM
+ * ===================================================================== 
+ */
+
+
+function snfc_theme() {
+  return array(
+    
+  );
+  
+}
+
+
+function snfc_preprocess_page(&$vars) {
+   //krumo($vars);
+  
+}
+
+
+/**
+ * =====================================================================
+ * VIEWS
+ * ===================================================================== 
+ */
+
+/**
+ * Implementation of hook_views_pre_render().
+ *
+ */
+function snfc_views_pre_render(&$view) {
+  
+  
+}
+
+/**
+ * Implementation of hook_views_pre_view().
+ *
+ */
+function snfc_views_pre_view(&$view) {
+  
+  
+  
+}
+
+
+
+
+
+
+
+
+
+/**
+ * =====================================================================
+ * CTOOLS & PANELS MODULES
+ * ===================================================================== 
+ */
+
+/**
+ * Implements hook_panels_pane_content_alter
+ */
+function snfc_panels_pane_content_alter($content, $pane, $args, $context) {
+  // Wrap pane node titles in H1
+  if ($content->type == 'node_title') {
+    //$content->content = '<h1 class="page-title">' . $content->content . '</h1>';
+  }
+  
+  
+  
+}
+
+
+
+
+
+
+
+
+/**
+ * =====================================================================
+ * CUSTOM FUNCTIONS
+ * ===================================================================== 
+ */
+
+
+
