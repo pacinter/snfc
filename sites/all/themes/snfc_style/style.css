@@ -44,7 +44,7 @@ Equation for font sizing:
  */
 
 body {
-  background: #fff;
+  background: #6D6D67;
   color: #222;
   font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
   font-size: 100%;
@@ -63,6 +63,9 @@ h1, .h1 {
   font-size: 2em;
   line-height: 1.5;
   margin-top: 0.75em;
+}
+h1#page-title {
+  border-bottom: 1px solid #B4B3AC;
 }
 
 h2, .h2 {
@@ -124,6 +127,7 @@ th { padding-right: 1em; }
   margin: 0 auto;
   padding: 0 10px;
   width: 940px;
+  background: #F3F1E9;
 }
 
 /**
@@ -248,6 +252,7 @@ body.sidebar-second #sidebar-second {
   clear: both;
   margin: 0;
   padding: 0;
+  background: #D7D7C8;
 }
 
 #navigation ul#main-menu {
