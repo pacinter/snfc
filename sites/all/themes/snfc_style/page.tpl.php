@@ -8,9 +8,14 @@
   </div>
 
   <header id="header" role="banner" class="clearfix">
-	<?php if ($logo): ?>
+    <?php if ($logo): ?>
       <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" id="logo">
         <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
+      </a>
+    <?php endif; ?>
+    <?php if ($page_image): ?>
+      <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" id="page-image">
+        <img src="<?php print $page_image; ?>" alt="<?php print t('Home'); ?>" />
       </a>
     <?php endif; ?>
     <?php if ($site_name || $site_slogan): ?>

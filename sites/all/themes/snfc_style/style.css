@@ -125,8 +125,8 @@ th { padding-right: 1em; }
 
 #container {
   margin: 0 auto;
-  padding: 0 10px;
-  width: 940px;
+  padding: 0;
+  width: 820px;
   background: #F3F1E9;
 }
 
@@ -137,8 +137,9 @@ th { padding-right: 1em; }
 /* 1 column: global values*/
 
 #main {
-  display: inline;
+  /* display: inline; */
   margin: 0;
+  padding: 0 36px;
 }
 
 /* 3 columns */
@@ -214,16 +215,22 @@ body.sidebar-second #sidebar-second {
 
 #header {
   margin: 0;
-  padding: 2.5em 0 0;
+  padding: 55px 0 0;
   position: relative;
+  background: #6D6D67 url('images/SNFC_logo.gif') no-repeat center top;
 }
 
 #header #logo {
   float: left;
   margin: 0 1em 1.5em 0;
 }
+#header #page-image {
+  line-height: 0;
+  display: block;
+}
 
 #header #site-name-slogan {
+  display: none;
   float: left;
   margin: 0 0 1.5em;
 }
@@ -243,6 +250,8 @@ body.sidebar-second #sidebar-second {
 #header #site-slogan {
   margin: 0;
 }
+
+
 
 /**
  * 6.NAVIGATION
@@ -294,6 +303,7 @@ body.sidebar-second #sidebar-second {
 .breadcrumb {
   clear: both;
   padding: 1.5em 0 0;
+  background: #F3F1E9;
 }
 
 #skip-link {
@@ -471,6 +481,7 @@ ul.secondary a.active {
   padding: 1.5em 0;
   position: relative;
   background: #D7D7C8;
+  background: #D7D7C8 url('images/FooterBottomCurve.gif') no-repeat 0 bottom;
 }
 
 #footer a.feed-icon {

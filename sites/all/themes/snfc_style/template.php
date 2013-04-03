@@ -51,6 +51,14 @@ function snfc_style_menu_local_tasks(&$variables) {
 }
 
 /**
+ * Override or insert variables into the page template.
+ */
+function snfc_style_preprocess_page(&$vars) {
+  $page_image_path = path_to_theme() . '/images/' . 'Header_01.jpg';
+  $vars['page_image'] = $page_image_path;
+}
+
+/**
  * Override or insert variables into the node template.
  */
 function snfc_style_preprocess_node(&$variables) {
