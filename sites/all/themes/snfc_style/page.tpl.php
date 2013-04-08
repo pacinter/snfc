@@ -51,18 +51,7 @@
               'class' => array('element-invisible'),
             ),
           )); ?>
-		  <?php print theme('links__system_secondary_menu', array(
-            'links' => $secondary_menu,
-            'attributes' => array(
-              'id' => 'secondary-menu',
-              'class' => array('links', 'clearfix'),
-            ),
-            'heading' => array(
-              'text' => t('Secondary menu'),
-              'level' => 'h2',
-              'class' => array('element-invisible'),
-            ),
-          )); ?>
+		  
         <?php endif; ?>
       </nav> <!-- /#navigation -->
     <?php endif; ?>
