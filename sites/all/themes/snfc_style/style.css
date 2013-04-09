@@ -660,3 +660,55 @@ ul.secondary a.active {
   float: right;
   margin-left: 0 0 15px 15px;
  }
+
+
+
+
+
+#graphic_nav {
+    border-bottom: 1px solid #CC6600;
+    margin: 0;
+    padding: 20px 0 0;
+    /*background: url("images/FrontPageTrees.gif") no-repeat scroll center bottom transparent;*/
+}
+#graphic_nav ul {
+    margin: 0;
+    padding: 0;
+}
+#graphic_nav ul li {
+    display: block;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+#courses_graphic a, #fieldcamp_graphic a, #research_graphic a {
+    border-bottom: medium none;
+    display: block;
+    height: 271px;
+    padding: 0;
+    width: 217px;
+}
+#courses_graphic a {
+    background: url("images/FrontPageClassesPic2.gif") no-repeat scroll center center transparent;
+    padding: 0 16px;
+}
+#courses_graphic a:hover {
+    background: url("images/FrontPageClassesPic2Hover.gif") no-repeat scroll center center transparent;
+}
+#research_graphic a {
+    background: url("images/FrontPageResearchPic2.gif") no-repeat scroll center center transparent;
+    padding: 0 16px;
+}
+#research_graphic a:hover {
+    background: url("images/FrontPageResearchPic2Hover.gif") no-repeat scroll center center transparent;
+}
+#fieldcamp_graphic a {
+    background: url("images/FrontPageCampusPic2.gif") no-repeat scroll center center transparent;
+    padding: 0 16px;
+}
+#fieldcamp_graphic a:hover {
+    background: url("images/FrontPageCampusPic2Hover.gif") no-repeat scroll center center transparent;
+}
+#courses_graphic a span, #fieldcamp_graphic a span, #research_graphic a span {
+    display: none;
+}
