@@ -67,6 +67,8 @@ h1, .h1 {
 }
 h1#page-title {
   border-bottom: 1px solid #B4B3AC;
+  color: #6D6D67;
+  font-weight: normal;
 }
 
 h2, .h2 {
@@ -146,7 +148,7 @@ th { padding-right: 1em; }
 #main {
   /* display: inline; */
   margin: 0;
-  padding: 36px 36px 36px;
+  padding: 0 36px 36px;
   font-size: 12.35px;
   line-height: 1.5;
 }
@@ -294,11 +296,15 @@ body.sidebar-second #sidebar-second {
   color: #6B6B66;
   text-transform: uppercase;
   letter-spacing: .1em;
+  border-right: 1px solid #6D6D67;
+}
+#navigation ul#main-menu li.last {
+  border-right: 0;
 }
 
 #navigation ul#main-menu li a {
   display: inline;
-  padding: 0 1em;
+  margin: 0 1em;
   color: #6D6D67;
   background-color: inherit;
 }
