@@ -668,6 +668,20 @@ ul.secondary a.active {
  }
 
 
+/**
+ * Pane styles
+ *
+ */
+.indent-pane {
+  margin-left: 25px;
+}
+.indent-pane .pane-title {
+  border-bottom: 1px solid;
+  margin-bottom: 1em;
+  font-size: 14.3px;
+}
+
+
 
 
 
