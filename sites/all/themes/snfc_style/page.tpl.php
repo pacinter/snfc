@@ -55,7 +55,7 @@
         <?php endif; ?>
       </nav> <!-- /#navigation -->
     <?php endif; ?>
-    <?php if ($breadcrumb): print $breadcrumb; endif;?>
+    <?php //if ($breadcrumb): print $breadcrumb; endif;?>
   </header> <!-- /#header -->
 
   <section id="main" role="main" class="clearfix">
