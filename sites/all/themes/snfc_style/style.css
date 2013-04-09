@@ -63,7 +63,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 h1, .h1 {
   font-size: 2em;
   line-height: 1.5;
-  margin-top: 0.75em;
+  margin: 0.75em 0;
 }
 h1#page-title {
   border-bottom: 1px solid #B4B3AC;
@@ -74,7 +74,7 @@ h1#page-title {
 h2, .h2 {
   font-size: 1.5em;
   line-height: 1;
-  margin-top: 1em;
+  margin: 1em 0;
 }
 
 h3, .h3 {
@@ -296,7 +296,7 @@ body.sidebar-second #sidebar-second {
   color: #6B6B66;
   text-transform: uppercase;
   letter-spacing: .1em;
-  border-right: 1px solid #6D6D67;
+  border-right: 1px solid #AAA;
 }
 #navigation ul#main-menu li.last {
   border-right: 0;
@@ -401,6 +401,12 @@ ul.inline li {
 }
 
 
+#main img,
+#main iframe {
+  padding: 8px;
+  background: #FFF;
+  border: 1px solid #CCC;
+}
 
 
 /* admin tabs */
@@ -549,7 +555,6 @@ ul.secondary a.active {
   clear: both;
   padding: .5em 0 1em;
   position: relative;
-  background: #D7D7C8;
   background: #D7D7C8 url('images/FooterBottomCurve.gif') no-repeat 0 bottom;
 }
 
@@ -577,7 +582,7 @@ ul.secondary a.active {
   display: inline;
   margin: 0;
   padding: 0 4px;
-  border-right: 1px solid #6D6D67;
+  border-right: 1px solid #AAA;
   font-size: 10px;
   font-family: "Times New Roman",​Times,​serif;
   color: #6B6B66;
@@ -633,6 +638,8 @@ ul.secondary a.active {
 .view-snfc-courses .views-row {
   background: #FFF;
   padding: 20px;
+  border: 1px solid #CCC;
+  overflow: auto;
 }
 .view-snfc-courses .views-row .views-field-title {
   font-size: 24.7px;
@@ -650,6 +657,26 @@ ul.secondary a.active {
 }
 .view-snfc-courses .views-row .views-field-field-course-image img{
   
+}
+
+
+
+/**
+ * Node styles
+ *
+ */
+.node-type-instructor .field-type-image {
+  overflow: auto;
+  
+}
+.node-type-instructor .field-type-image .field-item {
+  
+}
+.node-type-instructor .field-type-image .field-item img{
+  margin: 0;
+  padding: 8px;
+  background: #FFF;
+  border: 1px solid #CCC;
 }
 
 
