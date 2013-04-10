@@ -56,7 +56,32 @@ function snfc_style_menu_local_tasks(&$variables) {
 function snfc_style_preprocess_page(&$vars) {
   //krumo($vars);
   
-  $page_image_path = '/' . path_to_theme() . '/images/' . 'Header_01.jpg';
+  $path_alias = drupal_get_path_alias();
+  $path_parts = explode('/', $path_alias);
+  
+  switch ($path_parts[0]) {
+    case 'research':
+      $header_img = 'Header_16.jpg';
+      break;
+    
+    case 'restoration':
+      $header_img = 'Header_18.jpg';
+      break;
+    
+    case 'species':
+      $header_img = 'Header_30.jpg';
+      break;
+    
+    case 'photos':
+      $header_img = 'Header_17.jpg';
+      break;
+      
+    default:
+      $header_img = 'Header_01.jpg';
+      break;
+  }
+  
+  $page_image_path = '/' . path_to_theme() . '/images/' . $header_img;
   $vars['page_image'] = $page_image_path;
   
 }
