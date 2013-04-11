@@ -90,6 +90,8 @@ function snfc_style_preprocess_page(&$vars) {
  * Override or insert variables into the node template.
  */
 function snfc_style_preprocess_node(&$variables) {
+  //krumo($variables);
+  
   $variables['submitted'] = t('Published by !username on !datetime', array('!username' => $variables['name'], '!datetime' => $variables['date']));
   if ($variables['view_mode'] == 'full' && node_is_page($variables['node'])) {
     $variables['classes_array'][] = 'node-full';
